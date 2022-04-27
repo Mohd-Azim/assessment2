@@ -12,7 +12,7 @@ pipeline {
 	stage('Unit Test') {
 	   steps {
 			echo 'Project Testing stage'
-			bat label: 'Test running', script: '''mvn -f mavenised-java-project/pom.xml test'''
+			bat label: 'Test running', script: '''mvn  test'''
 	       
        		}
    	}
